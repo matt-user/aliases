@@ -1,0 +1,13 @@
+
+#############
+## ALIASES ##
+#############
+
+alias docker-ka='docker-kvc; docker-ki'
+alias docker-kvc='docker rm -vf $(docker ps -aq)'
+alias docker-ki='docker rmi -f $(docker images -aq)'
+alias docker-start='sudo systemctl start docker'
+alias git-lines='git ls-files | xargs cat | wc -l'
+alias git-lines-v='git ls-files | xargs wc -l'
+alias pnpm-clean='rm -rf **/**/node_modules; pnpm store prune; rm -rf ~/.pnpm-s>
+alias pnpm-clean-node='rm -rf **/**/node_modules'
